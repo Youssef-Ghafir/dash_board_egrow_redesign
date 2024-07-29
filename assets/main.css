@@ -163,3 +163,14 @@ ul {
   min-width: 10px !important;
   max-width: 10px !important;
 }
+.col_left .alert_container {
+  background-color: var(--light-bleu);
+}
+.col_left .alert_container * {
+  color: #ed0000 !important;
+  fill: #ed0000 !important;
+}
+.col_left .alert_container svg {
+  min-width: 60px;
+  max-width: 60px;
+}
