@@ -113,7 +113,7 @@
     <div class="content position-absolute">
       <!-- Start TopNavBar -->
       <nav
-        class="top_nav d-flex justify-content-between align-items-center flex-wrap"
+        class="top_nav d-flex justify-content-between align-items-center flex-wrap pe-2"
       >
         <div
           class="left_inf d-flex justify-content-between align-items-center gap-4"
@@ -206,12 +206,71 @@
         </div>
       </nav>
       <!-- End TopNavBar -->
+      <!-- Start the content -->
       <div class="content_child p-4 rounded-start-4">
         <div class="col_left">
-          <h4>Order details</h4>
+          <h4 class="mb-4">Order details</h4>
+          <div
+            class="btn_navigate d-flex align-items-start gap-3 justify-content-end mb-2"
+          >
+            <button
+              class="btn btn-light btn-sm fw-medium rounded-2 active"
+              style="background-color: #fff"
+            >
+              Order details
+            </button>
+            <button
+              class="btn btn-light btn-sm fw-medium rounded-2"
+              style="background-color: #fff"
+            >
+              Tracking
+            </button>
+            <button
+              class="btn btn-light btn-sm fw-medium rounded-2"
+              style="background-color: #fff"
+            >
+              Activity
+            </button>
+          </div>
+          <div class="content_col p-4 rounded-3 bg-white">
+            <div
+              class="inf d-flex justify-content-between align-items-start flex-wrap"
+            >
+              <div>
+                <h2 class="fs-3 fw-bold" style="color: var(--grey-color)">
+                  Order ID : DF986547
+                </h2>
+                <p class="fw-medium" style="color: var(--grey-color)">
+                  Order number : 5487145
+                </p>
+              </div>
+              <div
+                class="time d-flex align-items-center gap-3 rounded-5 px-2 py-3"
+                style="
+                  background-color: var(--light-bleu);
+                  min-width: 230px;
+                  max-width: 100%;
+                "
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  style="min-width: 30px"
+                >
+                  <path
+                    d="M256 0a256 256 0 1 1 0 512A256 256 0 1 1 256 0zM232 120l0 136c0 8 4 15.5 10.7 20l96 64c11 7.4 25.9 4.4 33.3-6.7s4.4-25.9-6.7-33.3L280 243.2 280 120c0-13.3-10.7-24-24-24s-24 10.7-24 24z"
+                  />
+                </svg>
+                <p class="mb-0 fw-medium" style="font-size: 14px">
+                  October 15/2024 15:59
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col_right"></div>
       </div>
+      <!-- End the content -->
     </div>
   </body>
 </html>

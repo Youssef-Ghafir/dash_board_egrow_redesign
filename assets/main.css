@@ -15,6 +15,7 @@ a {
 :root {
   --w-sideBar: 150px;
   --grey-color: #42526e;
+  --light-bleu: #ebf3fe;
 }
 ul {
   list-style: none;
@@ -69,14 +70,19 @@ ul {
   font-size: 14px;
 }
 .content_child {
-  background-color: #ebf3fe;
+  background-color: var(--light-bleu);
   display: grid;
-  grid-template-columns: 64% 35%;
+  grid-template-columns: 80% 18%;
   justify-content: space-between;
 }
 .content_child .col_left h4 {
   color: var(--grey-color);
   font-weight: 600;
   font-size: 20px;
+}
+.content_child .btn_navigate .active {
+  background-color: #fff;
+  box-shadow: 0px 20px 1px 0px #ffff;
+  border: transparent;
 }
 /* Main Style */
