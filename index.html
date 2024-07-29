@@ -245,7 +245,7 @@
                 </p>
               </div>
               <div
-                class="time d-flex align-items-center gap-3 rounded-5 px-2 py-3"
+                class="time d-flex align-items-center gap-3 rounded-5 px-2 py-2"
                 style="
                   background-color: var(--light-bleu);
                   min-width: 230px;
@@ -266,9 +266,414 @@
                 </p>
               </div>
             </div>
+            <!-- Start The Progress -->
+            <h6 class="mb-4 fw-medium" style="color: var(--grey-color)">
+              Progress
+            </h6>
+            <div
+              class="setps py-1 px-2 rounded-3"
+              style="background-color: #f8f8f8"
+            >
+              <div
+                class="box bg-white p-3 d-flex flex-column justify-content-end rounded-3"
+              >
+                <div>
+                  <span
+                    class="d-flex justify-content-center bg-black align-items-center rounded-circle mb-2"
+                    style="width: 25px; height: 25px"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 576 512"
+                      style="fill: white"
+                    >
+                      <path
+                        d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"
+                      />
+                    </svg>
+                  </span>
+                  <p>New</p>
+                </div>
+                <div class="bar green"></div>
+              </div>
+              <div
+                class="box bg-white p-3 d-flex flex-column justify-content-end rounded-3"
+              >
+                <div>
+                  <span
+                    class="d-flex justify-content-center bg-black align-items-center rounded-circle mb-2"
+                    style="width: 25px; height: 25px"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M438.6 105.4c12.5 12.5 12.5 32.8 0 45.3l-256 256c-12.5 12.5-32.8 12.5-45.3 0l-128-128c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0L160 338.7 393.4 105.4c12.5-12.5 32.8-12.5 45.3 0z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Confirmed</p>
+                </div>
+                <div class="bar green"></div>
+              </div>
+              <div
+                class="box bg-white p-3 d-flex flex-column justify-content-end rounded-3"
+              >
+                <div>
+                  <span
+                    class="d-flex justify-content-center bg-black align-items-center rounded-circle mb-2"
+                    style="width: 25px; height: 25px"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M495.9 166.6c3.2 8.7 .5 18.4-6.4 24.6l-43.3 39.4c1.1 8.3 1.7 16.8 1.7 25.4s-.6 17.1-1.7 25.4l43.3 39.4c6.9 6.2 9.6 15.9 6.4 24.6c-4.4 11.9-9.7 23.3-15.8 34.3l-4.7 8.1c-6.6 11-14 21.4-22.1 31.2c-5.9 7.2-15.7 9.6-24.5 6.8l-55.7-17.7c-13.4 10.3-28.2 18.9-44 25.4l-12.5 57.1c-2 9.1-9 16.3-18.2 17.8c-13.8 2.3-28 3.5-42.5 3.5s-28.7-1.2-42.5-3.5c-9.2-1.5-16.2-8.7-18.2-17.8l-12.5-57.1c-15.8-6.5-30.6-15.1-44-25.4L83.1 425.9c-8.8 2.8-18.6 .3-24.5-6.8c-8.1-9.8-15.5-20.2-22.1-31.2l-4.7-8.1c-6.1-11-11.4-22.4-15.8-34.3c-3.2-8.7-.5-18.4 6.4-24.6l43.3-39.4C64.6 273.1 64 264.6 64 256s.6-17.1 1.7-25.4L22.4 191.2c-6.9-6.2-9.6-15.9-6.4-24.6c4.4-11.9 9.7-23.3 15.8-34.3l4.7-8.1c6.6-11 14-21.4 22.1-31.2c5.9-7.2 15.7-9.6 24.5-6.8l55.7 17.7c13.4-10.3 28.2-18.9 44-25.4l12.5-57.1c2-9.1 9-16.3 18.2-17.8C227.3 1.2 241.5 0 256 0s28.7 1.2 42.5 3.5c9.2 1.5 16.2 8.7 18.2 17.8l12.5 57.1c15.8 6.5 30.6 15.1 44 25.4l55.7-17.7c8.8-2.8 18.6-.3 24.5 6.8c8.1 9.8 15.5 20.2 22.1 31.2l4.7 8.1c6.1 11 11.4 22.4 15.8 34.3zM256 336a80 80 0 1 0 0-160 80 80 0 1 0 0 160z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Processing</p>
+                </div>
+                <div class="bar yellow"></div>
+              </div>
+              <div
+                class="box bg-white p-3 d-flex flex-column justify-content-end rounded-3"
+              >
+                <div>
+                  <span
+                    class="d-flex justify-content-center bg-black align-items-center rounded-circle mb-2"
+                    style="width: 25px; height: 25px"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <path
+                        d="M381 114.9L186.1 41.8c-16.7-6.2-35.2-5.3-51.1 2.7L89.1 67.4C78 73 77.2 88.5 87.6 95.2l146.9 94.5L136 240 77.8 214.1c-8.7-3.9-18.8-3.7-27.3 .6L18.3 230.8c-9.3 4.7-11.8 16.8-5 24.7l73.1 85.3c6.1 7.1 15 11.2 24.3 11.2l137.7 0c5 0 9.9-1.2 14.3-3.4L535.6 212.2c46.5-23.3 82.5-63.3 100.8-112C645.9 75 627.2 48 600.2 48l-57.4 0c-20.2 0-40.2 4.8-58.2 14L381 114.9zM0 480c0 17.7 14.3 32 32 32l576 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 448c-17.7 0-32 14.3-32 32z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Shipping</p>
+                </div>
+                <div class="bar"></div>
+              </div>
+              <div
+                class="box bg-white p-3 d-flex flex-column justify-content-end rounded-3"
+              >
+                <div>
+                  <span
+                    class="d-flex justify-content-center bg-black align-items-center rounded-circle mb-2"
+                    style="width: 25px; height: 25px"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 384 512"
+                    >
+                      <path
+                        d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                      />
+                    </svg>
+                  </span>
+                  <p>Delivred</p>
+                </div>
+                <div class="bar"></div>
+              </div>
+            </div>
+            <!-- End The Progress -->
+            <div
+              class="d-flex justify-content-between align-items-center mt-5 mb-3"
+            >
+              <h6 style="color: var(--grey-color)">Products</h6>
+              <button
+                class="btn btn-light btn-sm"
+                style="box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"
+              >
+                Add Product
+              </button>
+            </div>
+            <div class="container_table p-3 rounded-3 mb-4">
+              <table class="product_overview table">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th class="text-uppercase">Qty</th>
+                    <th>Unit price</th>
+                    <th>Amount</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          src="assets/images/product_1.jpeg"
+                          alt=""
+                          srcset=""
+                          class="rounded-3"
+                          style="width: 120px"
+                        />
+                        <div class="inf">
+                          <p class="mb-1">Info Product</p>
+                          <h6 class="fw-medium">caméra est un appareil</h6>
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet consectetur
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="mb-0">6</p></td>
+                    <td><p class="mb-0">126$</p></td>
+                    <td><p class="mb-0">5600$</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          src="assets/images/product_1.jpeg"
+                          alt=""
+                          srcset=""
+                          class="rounded-3"
+                          style="width: 120px"
+                        />
+                        <div class="inf">
+                          <p class="mb-1">Info Product</p>
+                          <h6 class="fw-medium">caméra est un appareil</h6>
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet consectetur
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="mb-0">6</p></td>
+                    <td><p class="mb-0">126$</p></td>
+                    <td><p class="mb-0">5600$</p></td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div class="d-flex align-items-center gap-2">
+                        <img
+                          src="assets/images/product_1.jpeg"
+                          alt=""
+                          srcset=""
+                          class="rounded-3"
+                          style="width: 120px"
+                        />
+                        <div class="inf">
+                          <p class="mb-1">Info Product</p>
+                          <h6 class="fw-medium">caméra est un appareil</h6>
+                          <p class="mb-0">
+                            Lorem ipsum dolor sit amet consectetur
+                          </p>
+                        </div>
+                      </div>
+                    </td>
+                    <td><p class="mb-0">6</p></td>
+                    <td><p class="mb-0">126$</p></td>
+                    <td><p class="mb-0">5600$</p></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <h6 style="color: var(--grey-color)">Payments</h6>
+            <div
+              class="details_payments pt-5 rounded-3"
+              style="
+                box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+                  rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+              "
+            >
+              <div class="px-4">
+                <div
+                  class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom"
+                >
+                  <p class="mb-0 d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 448 512"
+                      style="min-width: 20px"
+                    >
+                      <path
+                        d="M160 80c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-352zM0 272c0-26.5 21.5-48 48-48l32 0c26.5 0 48 21.5 48 48l0 160c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48L0 272zM368 96l32 0c26.5 0 48 21.5 48 48l0 288c0 26.5-21.5 48-48 48l-32 0c-26.5 0-48-21.5-48-48l0-288c0-26.5 21.5-48 48-48z"
+                      />
+                    </svg>
+                    Subtotal
+                  </p>
+                  <span>5600$</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between pb-3 mb-4 border-bottom"
+                >
+                  <p class="mb-0 d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 512 512"
+                    >
+                      <path
+                        d="M345 39.1L472.8 168.4c52.4 53 52.4 138.2 0 191.2L360.8 472.9c-9.3 9.4-24.5 9.5-33.9 .2s-9.5-24.5-.2-33.9L438.6 325.9c33.9-34.3 33.9-89.4 0-123.7L310.9 72.9c-9.3-9.4-9.2-24.6 .2-33.9s24.6-9.2 33.9 .2zM0 229.5L0 80C0 53.5 21.5 32 48 32l149.5 0c17 0 33.3 6.7 45.3 18.7l168 168c25 25 25 65.5 0 90.5L277.3 442.7c-25 25-65.5 25-90.5 0l-168-168C6.7 262.7 0 246.5 0 229.5zM144 144a32 32 0 1 0 -64 0 32 32 0 1 0 64 0z"
+                      />
+                    </svg>
+                    Discount
+                  </p>
+                  <span>560$</span>
+                </div>
+                <div
+                  class="d-flex align-items-center justify-content-between pb-3 border-bottom"
+                >
+                  <p class="mb-0 d-flex gap-3 align-items-center">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 640 512"
+                    >
+                      <path
+                        d="M381 114.9L186.1 41.8c-16.7-6.2-35.2-5.3-51.1 2.7L89.1 67.4C78 73 77.2 88.5 87.6 95.2l146.9 94.5L136 240 77.8 214.1c-8.7-3.9-18.8-3.7-27.3 .6L18.3 230.8c-9.3 4.7-11.8 16.8-5 24.7l73.1 85.3c6.1 7.1 15 11.2 24.3 11.2l137.7 0c5 0 9.9-1.2 14.3-3.4L535.6 212.2c46.5-23.3 82.5-63.3 100.8-112C645.9 75 627.2 48 600.2 48l-57.4 0c-20.2 0-40.2 4.8-58.2 14L381 114.9zM0 480c0 17.7 14.3 32 32 32l576 0c17.7 0 32-14.3 32-32s-14.3-32-32-32L32 448c-17.7 0-32 14.3-32 32z"
+                      />
+                    </svg>
+                    Shipping
+                  </p>
+                  <span>1600$</span>
+                </div>
+              </div>
+              <div
+                class="d-flex justify-content-between align-items-center px-3 py-3 mt-4"
+                style="background-color: #f8fafc"
+              >
+                <p class="mb-0 fw-bold fs-5">Total</p>
+                <h6>5600$</h6>
+              </div>
+            </div>
           </div>
         </div>
-        <div class="col_right"></div>
+        <div class="col_right">
+          <div class="container_btns d-flex justify-content-end gap-2">
+            <button class="btn btn-sm btn-light">Delete Order</button>
+            <button
+              class="btn btn-sm btn-light"
+              style="background-color: white"
+            >
+              Edit Order
+            </button>
+          </div>
+          <div class="box bg-white rounded-3 p-4 mt-4">
+            <h6 class="mb-3">Customer Details</h6>
+            <p
+              class="d-flex align-items-center gap-2 mb-4"
+              style="font-size: 14px"
+            >
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </span>
+              George M Garza
+            </p>
+            <p
+              class="d-flex align-items-center gap-2 mb-4"
+              style="font-size: 14px"
+            >
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </span>
+              George M Garza
+            </p>
+            <p
+              class="d-flex align-items-center gap-2 mb-0"
+              style="font-size: 14px"
+            >
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </span>
+              George M Garza
+            </p>
+          </div>
+          <div class="box bg-white rounded-3 p-4 mt-4">
+            <h6 class="mb-3">Customer History</h6>
+            <p
+              class="d-flex align-items-center gap-2 mb-4"
+              style="font-size: 14px"
+            >
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </span>
+              George M Garza
+            </p>
+
+            <p
+              class="d-flex align-items-center gap-2 mb-0"
+              style="font-size: 14px"
+            >
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+                  <path
+                    d="M224 256A128 128 0 1 0 224 0a128 128 0 1 0 0 256zm-45.7 48C79.8 304 0 383.8 0 482.3C0 498.7 13.3 512 29.7 512l388.6 0c16.4 0 29.7-13.3 29.7-29.7C448 383.8 368.2 304 269.7 304l-91.4 0z"
+                  />
+                </svg>
+              </span>
+              George M Garza
+            </p>
+          </div>
+          <div class="box bg-white rounded-3 p-4 mt-4">
+            <h6 class="mb-3">Shipping Adress</h6>
+            <p class="d-flex align-items-center gap-2" style="font-size: 14px">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M215.7 499.2C267 435 384 279.4 384 192C384 86 298 0 192 0S0 86 0 192c0 87.4 117 243 168.3 307.2c12.3 15.3 35.1 15.3 47.4 0zM192 128a64 64 0 1 1 0 128 64 64 0 1 1 0-128z"
+                  />
+                </svg>
+              </span>
+              George M Garza George M Garza
+            </p>
+          </div>
+          <div class="box bg-white rounded-3 p-4 mt-4">
+            <h6 class="mb-3">Shipping Informations</h6>
+            <p class="d-flex align-items-center gap-2" style="font-size: 14px">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path
+                    d="M15 15C24.4 5.7 39.6 5.7 49 15l63 63L112 40c0-13.3 10.7-24 24-24s24 10.7 24 24l0 96c0 13.3-10.7 24-24 24l-96 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l38.1 0L15 49C5.7 39.6 5.7 24.4 15 15zM133.5 243.9C158.6 193.6 222.7 112 320 112s161.4 81.6 186.5 131.9c3.8 7.6 3.8 16.5 0 24.2C481.4 318.4 417.3 400 320 400s-161.4-81.6-186.5-131.9c-3.8-7.6-3.8-16.5 0-24.2zM320 320a64 64 0 1 0 0-128 64 64 0 1 0 0 128zM591 15c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9l-63 63 38.1 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-96 0c-13.3 0-24-10.7-24-24l0-96c0-13.3 10.7-24 24-24s24 10.7 24 24l0 38.1 63-63zM15 497c-9.4-9.4-9.4-24.6 0-33.9l63-63L40 400c-13.3 0-24-10.7-24-24s10.7-24 24-24l96 0c13.3 0 24 10.7 24 24l0 96c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-38.1L49 497c-9.4 9.4-24.6 9.4-33.9 0zm576 0l-63-63 0 38.1c0 13.3-10.7 24-24 24s-24-10.7-24-24l0-96c0-13.3 10.7-24 24-24l96 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-38.1 0 63 63c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0z"
+                  />
+                </svg>
+              </span>
+              Tracking number: DF45896
+            </p>
+            <p class="d-flex align-items-center gap-2" style="font-size: 14px">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512">
+                  <path
+                    d="M48 0C21.5 0 0 21.5 0 48L0 464c0 26.5 21.5 48 48 48l96 0 0-80c0-26.5 21.5-48 48-48s48 21.5 48 48l0 80 96 0c26.5 0 48-21.5 48-48l0-416c0-26.5-21.5-48-48-48L48 0zM64 240c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zm112-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM80 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16zm80 16c0-8.8 7.2-16 16-16l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32zM272 96l32 0c8.8 0 16 7.2 16 16l0 32c0 8.8-7.2 16-16 16l-32 0c-8.8 0-16-7.2-16-16l0-32c0-8.8 7.2-16 16-16z"
+                  />
+                </svg>
+              </span>
+              Company: YG
+            </p>
+            <p class="d-flex align-items-center gap-2" style="font-size: 14px">
+              <span>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512">
+                  <path
+                    d="M128 64c0-17.7 14.3-32 32-32l160 0c17.7 0 32 14.3 32 32l0 352 96 0 0-160c0-17.7 14.3-32 32-32l128 0c17.7 0 32 14.3 32 32s-14.3 32-32 32l-96 0 0 160c0 17.7-14.3 32-32 32l-160 0c-17.7 0-32-14.3-32-32l0-352-96 0 0 160c0 17.7-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32s14.3-32 32-32l96 0 0-160z"
+                  />
+                </svg>
+              </span>
+              Status: Delivred
+            </p>
+          </div>
+        </div>
       </div>
       <!-- End the content -->
     </div>

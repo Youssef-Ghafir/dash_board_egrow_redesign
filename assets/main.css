@@ -4,6 +4,7 @@
 }
 svg {
   max-width: 15px;
+  min-width: 15px;
 }
 img {
   width: 100%;
@@ -72,7 +73,7 @@ ul {
 .content_child {
   background-color: var(--light-bleu);
   display: grid;
-  grid-template-columns: 80% 18%;
+  grid-template-columns: 78% 20%;
   justify-content: space-between;
 }
 .content_child .col_left h4 {
@@ -80,9 +81,85 @@ ul {
   font-weight: 600;
   font-size: 20px;
 }
+/* Main Style */
 .content_child .btn_navigate .active {
   background-color: #fff;
   box-shadow: 0px 20px 1px 0px #ffff;
   border: transparent;
 }
-/* Main Style */
+.content_child .setps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+}
+.content_child .setps .box {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+.content_child .setps svg {
+  min-width: 14px;
+  fill: #fff;
+}
+.content_child .setps .box .bar {
+  width: 100%;
+  border-radius: 10px;
+  height: 10px;
+  background-color: #f2f2f2;
+}
+.content_child .setps .box .bar.green {
+  background-color: #24ae5c;
+}
+.content_child .setps .box .bar.yellow {
+  background-color: #d5bd0a;
+}
+.content_child .container_table {
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  width: 100%;
+}
+.content_child .container_table {
+  overflow-x: scroll;
+}
+.content_child table {
+  border: transparent;
+  min-width: 800px;
+  border-spacing: 0 10px; /* Horizontal spacing, Vertical spacing */
+  border-collapse: separate;
+}
+.content_child table th {
+  color: var(--grey-color);
+}
+.content_child table tr td p {
+  font-weight: 500;
+  color: var(--grey-color);
+}
+.content_child table tr td {
+  vertical-align: middle;
+}
+.content_child table tr {
+  margin-bottom: 1rem;
+}
+.details_payments {
+  overflow: hidden;
+}
+.details_payments svg {
+  min-width: 20px;
+}
+.content_child .col_right .container_btns button {
+  background-color: #fff !important;
+}
+.col_right .box p > span {
+  max-width: 20px;
+  min-width: 20px;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  border-radius: 50%;
+  justify-content: center;
+  height: 20px;
+  background-color: #42526e;
+}
+.col_right .box p > span svg {
+  fill: #fff;
+  min-width: 10px !important;
+  max-width: 10px !important;
+}
