@@ -119,7 +119,7 @@ ul {
 .content_child .container_table {
   overflow-x: scroll;
 }
-.content_child table {
+.content_child .container_table table {
   border: transparent;
   min-width: 800px;
   border-spacing: 0 10px; /* Horizontal spacing, Vertical spacing */
@@ -242,4 +242,130 @@ ul {
   width: 10px;
   height: 10px;
   background-color: black;
+}
+/*  */
+.content_child .container_analytics {
+  display: grid;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  overflow: hidden;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+}
+.content_child .container_analytics .box:not(:last-of-type) {
+  border-right: 1px solid #ddd;
+}
+.content_child .container_analytics .box h4 {
+  color: #3e3535;
+  font-size: 17px;
+}
+.content_child .container_analytics .box h4 span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: black;
+}
+.content_child .container_analytics .box h4 span > svg {
+  min-width: 8px !important;
+  max-width: 8px !important;
+  fill: #fff;
+}
+.content_child .container_analytics .inf p {
+  font-size: 15px;
+  font-weight: 500;
+}
+.content_child .container_analytics .inf p svg {
+  min-width: 12px !important;
+  max-width: 12px !important;
+}
+.content_child .container_analytics .inf .red {
+  color: #ff4444 !important;
+}
+.content_child .container_analytics .inf .red {
+  fill: #ff4444;
+}
+.content_child .container_analytics .inf .green {
+  color: #05eb6e !important;
+}
+.content_child .container_analytics .inf .green {
+  fill: #05eb6e;
+}
+.content_child .container_charts > div {
+  height: 300px;
+}
+.content_child .container_charts > div,
+.container_tables > div,
+.content_child .latest_orders,
+.content_child .team_container {
+  overflow: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px,
+    rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  border-radius: 10px;
+  background-color: #fff;
+}
+.content_child .container_charts > div > h5,
+.container_tables > div > h5,
+.content_child .latest_orders h5,
+.content_child .team_container h5 {
+  font-size: 15px;
+  margin-bottom: 1rem;
+  color: var(--grey-color);
+  font-weight: 600;
+}
+.container_tables > div table,
+.content_child .latest_orders table,
+.content_child .team_container table {
+  border: transparent;
+  border-spacing: 0 10px; /* Horizontal spacing, Vertical spacing */
+}
+.container_tables > div table thead th,
+.content_child .latest_orders table thead th,
+.content_child .team_container table thead th {
+  font-size: 15px;
+}
+.container_tables > div table *,
+.content_child .latest_orders table *,
+.content_child .team_container table * {
+  font-size: 14px !important;
+}
+.container_tables > div tr td img,
+.content_child .latest_orders tr td img,
+.content_child .team_container tr td img {
+  width: 40px;
+  height: 40px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.content_child .team_container table tr td {
+  text-align: center;
+}
+.content_child .team_container table tr td span {
+  width: 10px;
+  /* margin-left: auto; */
+  border-radius: 50%;
+  display: block;
+  height: 10px;
+}
+.content_child .team_container table tr td span.red {
+  background-color: #f30e16;
+}
+.content_child .team_container table tr td span.green {
+  background-color: #05eb6e;
+}
+/*  */
+.iframe-container {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-top: 1rem;
+  width: 100%;
+  padding-bottom: 56.25%;
+  height: 0;
+}
+.iframe-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
