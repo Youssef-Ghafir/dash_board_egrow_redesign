@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/main.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product List</title>
+  </head>
+  <body>
+    <div class="content position-absolute">
+      <!-- Start TopNavBar -->
+      <nav
+        class="top_nav d-flex justify-content-between align-items-center flex-wrap pe-2"
+      >
+        <div
+          class="left_inf d-flex justify-content-between align-items-center gap-4"
+        >
+          <ul class="d-flex align-items-center gap-5 mb-0">
+            <li><a href="" class="fw-medium">Board</a></li>
+            <li><a href="" class="fw-medium">List</a></li>
+            <li><a href="" class="fw-medium">Calendar</a></li>
+            <li><a href="" class="fw-medium">Integrations</a></li>
+            <li>
+              <a href="" class="fw-medium">
+                Support
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 384 512"
+                  style="fill: #ffbb00; width: 13px !important"
+                >
+                  <path
+                    d="M0 256L28.5 28c2-16 15.6-28 31.8-28H228.9c15 0 27.1 12.1 27.1 27.1c0 3.2-.6 6.5-1.7 9.5L208 160H347.3c20.2 0 36.7 16.4 36.7 36.7c0 7.4-2.2 14.6-6.4 20.7l-192.2 281c-5.9 8.6-15.6 13.7-25.9 13.7h-2.9c-15.7 0-28.5-12.8-28.5-28.5c0-2.3 .3-4.6 .9-6.9L176 288H32c-17.7 0-32-14.3-32-32z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <button
+            class="add d-flex align-items-center justify-content-center bg-transparent"
+            style="
+              width: 20px;
+              height: 20px;
+              border-radius: 50%;
+              border: 1px solid #42526e;
+            "
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="min-width: 11px; color: #42526e"
+            >
+              <path
+                d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+              />
+            </svg>
+          </button>
+          <div class="inp">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+              <path
+                d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+              />
+            </svg>
+            <input
+              type="text"
+              placeholder="Search contacts"
+              class="px-4 py-1 rounded-5 border-0"
+            />
+          </div>
+        </div>
+        <div class="info_profile d-flex align-items-center gap-3">
+          <span
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 448 512"
+              style="width: 60px; cursor: pointer"
+            >
+              <path
+                d="M224 0c-17.7 0-32 14.3-32 32l0 19.2C119 66 64 130.6 64 208l0 25.4c0 45.4-15.5 89.5-43.8 124.9L5.3 377c-5.8 7.2-6.9 17.1-2.9 25.4S14.8 416 24 416l400 0c9.2 0 17.6-5.3 21.6-13.6s2.9-18.2-2.9-25.4l-14.9-18.6C399.5 322.9 384 278.8 384 233.4l0-25.4c0-77.4-55-142-128-156.8L256 32c0-17.7-14.3-32-32-32zm0 96c61.9 0 112 50.1 112 112l0 25.4c0 47.9 13.9 94.6 39.7 134.6L72.3 368C98.1 328 112 281.3 112 233.4l0-25.4c0-61.9 50.1-112 112-112zm64 352l-64 0-64 0c0 17 6.7 33.3 18.7 45.3s28.3 18.7 45.3 18.7s33.3-6.7 45.3-18.7s18.7-28.3 18.7-45.3z"
+              />
+            </svg>
+          </span>
+          <a href="#" class="btn btn-dark btn-sm">Upgrade Now</a>
+          <div class="profile d-flex gap-2">
+            <img
+              src="assets/images/boy.png"
+              alt=""
+              srcset=""
+              style="width: 32px; object-fit: cover"
+            />
+            <div class="d-flex gap-2 align-items-center">
+              <h4 class="mb-0" style="font-size: 15px">Youssef</h4>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 512 512"
+                style="width: 20px"
+              >
+                <path
+                  d="M233.4 406.6c12.5 12.5 32.8 12.5 45.3 0l192-192c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 338.7 86.6 169.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l192 192z"
+                />
+              </svg>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- End TopNavBar -->
+      <!-- Start the content -->
+      <div
+        class="content_child p-4 rounded-start-4"
+        style="display: flex; flex-direction: column"
+      >
+        <div class="col_left">
+          <h4 class="mb-4">Product List</h4>
+          <div class="content_col p-4 rounded-3 bg-white">
+            <div
+              class="inf d-flex justify-content-between align-items-center flex-wrap"
+            >
+              <div class="d-flex gap-3">
+                <button
+                  class="btn rounded-4 text-white d-flex gap-2"
+                  style="background-color: #17a357"
+                >
+                  <span
+                    class="d-flex justify-content-center align-items-center rounded-circle"
+                    style="width: 20px; height: 20px; border: 2px solid #fff"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      style="fill: #fff"
+                      viewBox="0 0 448 512"
+                    >
+                      <path
+                        d="M256 80c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 144L48 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l144 0 0 144c0 17.7 14.3 32 32 32s32-14.3 32-32l0-144 144 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-144 0 0-144z"
+                      />
+                    </svg>
+                  </span>
+                  New Product
+                </button>
+                <div class="inp">
+                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                    <path
+                      d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                    />
+                  </svg>
+                  <input
+                    type="text"
+                    style="
+                      background-color: #fff;
+                      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+                        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+                    "
+                    placeholder="Search contacts"
+                    class="px-4 py-1 rounded-5 border-0"
+                  />
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-danger rounded-3">Delete</button>
+                <button class="btn btn-sm" style="background-color: #ebf3ff">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 128 512"
+                    style="min-width: 7px"
+                  >
+                    <path
+                      d="M64 360a56 56 0 1 0 0 112 56 56 0 1 0 0-112zm0-160a56 56 0 1 0 0 112 56 56 0 1 0 0-112zM120 96A56 56 0 1 0 8 96a56 56 0 1 0 112 0z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="table_wrap_list_product mt-5" style="overflow-x: auto">
+              <table
+                class="table"
+                style="min-width: 1400px; border: transparent"
+              >
+                <thead
+                  style="
+                    border-top: 1px solid #ddd;
+                    border-bottom: 1px solid #ddd;
+                  "
+                >
+                  <th>
+                    <div
+                      class="checkbox-wrapper-4 d-flex justify-content-center align-items-center justify-content-center"
+                    >
+                      <input class="inp-cbx" id="morning" type="checkbox" />
+                      <label class="cbx" for="morning">
+                        <span>
+                          <svg width="12px" height="10px">
+                            <use xlink:href="#check-4"></use></svg></span
+                      ></label>
+                      <svg class="inline-svg">
+                        <symbol id="check-4" viewbox="0 0 12 10">
+                          <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                        </symbol>
+                      </svg>
+                    </div>
+                  </th>
+                  <th>Product Name</th>
+                  <th>Order Id</th>
+                  <th>Price</th>
+                  <th>QTE</th>
+                  <th>Total(earned)</th>
+                  <th>Shipping Price</th>
+                  <th>City</th>
+                  <th>Stage</th>
+                  <th>Source</th>
+                  <th>Order date</th>
+                  <th>Assignement</th>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <div
+                        class="checkbox-wrapper-4 d-flex justify-content-center align-items-center justify-content-center"
+                      >
+                        <input class="inp-cbx" id="product_1" type="checkbox" />
+                        <label class="cbx" for="product_1">
+                          <span>
+                            <svg width="12px" height="10px">
+                              <use xlink:href="#check-4"></use></svg></span
+                        ></label>
+                        <svg class="inline-svg">
+                          <symbol id="check-4" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                          </symbol>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <img
+                          src="assets/images/product_1.jpeg"
+                          alt=""
+                          srcset=""
+                        />
+                        <div class="inf">
+                          <p class="mb-0">Climatiseur</p>
+                          <span class="num_item">+12</span>
+                        </div>
+                        <button
+                          class="rounded-circle d-flex align-items-center justify-content-center"
+                          style="
+                            width: 20px;
+                            height: 20px;
+                            border: 2px solid #14326a;
+                            background-color: #e8f1fe;
+                          "
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            style="min-width: 11px"
+                            viewBox="0 0 448 512"
+                          >
+                            <path
+                              d="M201.4 137.4c12.5-12.5 32.8-12.5 45.3 0l160 160c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L224 205.3 86.6 342.6c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3l160-160z"
+                            />
+                          </svg>
+                        </button>
+                      </div>
+                    </td>
+                    <td class="colored"><p class="mb-0">898EEDD</p></td>
+                    <td class="colored"><p class="mb-0">698$</p></td>
+                    <td class="colored"><p class="mb-0">12</p></td>
+                    <td>1856$</td>
+                    <td>1$</td>
+                    <td>Marrakech</td>
+                    <td><p class="stage mb-0">Canceled</p></td>
+                    <td>Facebook</td>
+                    <td>Today</td>
+                    <td>
+                      <div class="d-flex assignement gap-1">
+                        <img src="assets/images/boy.png" alt="" srcset="" />
+                        <img src="assets/images/boy.png" alt="" srcset="" />
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <div
+                        class="checkbox-wrapper-4 d-flex justify-content-center align-items-center justify-content-center"
+                      >
+                        <input class="inp-cbx" id="product_2" type="checkbox" />
+                        <label class="cbx" for="product_2">
+                          <span>
+                            <svg width="12px" height="10px">
+                              <use xlink:href="#check-4"></use></svg></span
+                        ></label>
+                        <svg class="inline-svg">
+                          <symbol id="check-4" viewbox="0 0 12 10">
+                            <polyline points="1.5 6 4.5 9 10.5 1"></polyline>
+                          </symbol>
+                        </svg>
+                      </div>
+                    </td>
+                    <td>
+                      <div class="d-flex gap-2">
+                        <img
+                          src="assets/images/product_1.jpeg"
+                          alt=""
+                          srcset=""
+                        />
+                        <div class="inf">
+                          <p class="mb-0">Climatiseur</p>
+                          <span class="num_item">+12</span>
+                        </div>
+                      </div>
+                    </td>
+                    <td class="colored"><p class="mb-0">898EEDD</p></td>
+                    <td class="colored"><p class="mb-0">698$</p></td>
+                    <td class="colored"><p class="mb-0">12</p></td>
+                    <td>1856$</td>
+                    <td>1$</td>
+                    <td>Marrakech</td>
+                    <td><p class="stage mb-0">Canceled</p></td>
+                    <td>Facebook</td>
+                    <td>Today</td>
+                    <td>
+                      <div class="d-flex assignement gap-1">
+                        <img src="assets/images/boy.png" alt="" srcset="" />
+                        <img src="assets/images/boy.png" alt="" srcset="" />
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End the content -->
+    </div>
+  </body>
+</html>
